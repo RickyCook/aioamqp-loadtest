@@ -1,8 +1,8 @@
 # AIOAMQP Load Test
 Basic load test for Python aioamqp library
 
-AIOAMQP code: https://github.com/polyconseil/aioamqp
-AIOAMQP docs: http://aioamqp.readthedocs.io/en/latest/
+- AIOAMQP code: https://github.com/polyconseil/aioamqp
+- AIOAMQP docs: http://aioamqp.readthedocs.io/en/latest/
 
 ## Running (Docker)
 
