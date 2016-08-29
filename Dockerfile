@@ -16,8 +16,8 @@ COPY _deps_python.sh /code/_deps_python.sh
 RUN ./_deps_python.sh
 
 COPY entrypoint.sh /code/entrypoint.sh
-COPY aioamqp_test_cli.py /code/aioamqp_test_cli.py
-COPY aioamqp_test /code/aioamqp_test
+COPY aioamqp_loadtest_cli.py /code/aioamqp_loadtest_cli.py
+COPY aioamqp_loadtest /code/aioamqp_loadtest
 
 ENTRYPOINT ["/code/entrypoint.sh"]
 CMD ["run"]

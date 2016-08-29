@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from aioamqp_test.cli import cli
+from aioamqp_loadtest.cli import cli
 
 if __name__ == '__main__':
     cli()

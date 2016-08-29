@@ -22,9 +22,9 @@ case "$1" in
     trap 'stopall' SIGINT SIGQUIT SIGTERM
 
     docker-entrypoint.sh rabbitmq-server &
-    "$THIS_DIR/aioamqp_test_cli.py" producer &
+    "$THIS_DIR/aioamqp_loadtest_cli.py" producer &
     producer_pid=$!
-    "$THIS_DIR/aioamqp_test_cli.py" consumer &
+    "$THIS_DIR/aioamqp_loadtest_cli.py" consumer &
     consumer_pid=$!
 
     wait $producer_pid
