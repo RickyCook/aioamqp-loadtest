@@ -15,6 +15,9 @@ Run the built image
     ...
     INFO    2016-08-29 06:44:11,446 producer   _rmq_produce  156: 10000 messages sent
     INFO    2016-08-29 06:44:12,259 consumer   _on_message  180: 10000 messages acknowledged
+    INFO    2016-08-29 06:44:12,769 producer   _rmq_produce  156: 20000 messages sent
+    INFO    2016-08-29 06:44:14,297 producer   _rmq_produce  156: 30000 messages sent
+    INFO    2016-08-29 06:44:14,348 consumer   _on_message  180: 20000 messages acknowledged
 
 ## Stopping
 
