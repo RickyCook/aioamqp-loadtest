@@ -6,6 +6,9 @@ Basic load test for Python aioamqp library
 
 ## Running (Docker)
 
+The Dockerfile provided runs a RabbitMQ server, a producer, and a consumer that
+all interact correctly with each other.
+
     $ docker run -it --rm thatpanda/aioamqp-loadtest:latest
     ...
     INFO    2016-08-29 06:44:11,446 producer   _rmq_produce  156: 10000 messages sent
