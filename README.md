@@ -4,6 +4,30 @@ Basic load test for Python aioamqp library
 - AIOAMQP code: https://github.com/polyconseil/aioamqp
 - AIOAMQP docs: https://aioamqp.readthedocs.io/en/latest/
 
+In **producer** mode starts 100 coroutines that each asynchronously send a blank
+message to RabbitMQ and then restart themself
+
+In **consumer** mode receives and acknowledges messages as quickly as it can from
+RabbitMQ
+
+In **both** modes each time a message is sent, or acknowledged a counter is updated.
+When a multiple of 10000 messages is sent, a log message is shown
+
+```
+Usage: aioamqp_loadtest_cli.py [OPTIONS] MODE
+
+Options:
+  --host TEXT
+  --port INTEGER
+  --username TEXT
+  --password TEXT
+  --queue TEXT
+  --exchange TEXT
+  --pidfile TEXT
+  --debug / --no-debug
+  --help                Show this message and exit.
+```
+
 ## Running (Docker)
 
 The Dockerfile provided runs a RabbitMQ server, a producer, and a consumer that
