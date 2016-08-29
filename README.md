@@ -5,7 +5,7 @@ Basic load test for Python aioamqp library
 - AIOAMQP docs: https://aioamqp.readthedocs.io/en/latest/
 
 In **producer** mode starts 100 coroutines that each asynchronously send a blank
-message to RabbitMQ and then restart themself
+message to RabbitMQ and then restart themselves
 
 In **consumer** mode receives and acknowledges messages as quickly as it can from
 RabbitMQ
